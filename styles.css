@@ -1,0 +1,383 @@
+/* BASE NEUTRA: “se ve bien, pero sin personalidad” */
+
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 100%;
+}
+@media {
+  max-width: 50%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f6f7fb;
+}
+
+header {
+  text-align: center;
+  h1{
+    font-size: 200%;
+    letter-spacing: 1px;
+  }
+  h2 {
+    font-size: 150%;
+    letter-spacing: 1px;
+  }
+}
+
+nav {
+  text-align: center;
+  margin: 1%;
+  a {
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  a:hover{
+    font-weight:bold;
+  }
+}
+
+main {
+  margin: 0% auto;
+  width: 80%;
+  background-color: #0f0015;
+  border-radius: 25px;
+  padding: 20px;
+  color: #cbd5e1;
+  h1{
+    line-height: 110%;
+    margin: 2%;
+    color: white;
+  }
+  h2{
+    letter-spacing: 0px;
+    font-size: 100%;
+  }
+  p{
+    margin: 1%;
+  }
+  h3 {
+    margin-top: 2%;
+  }
+}
+
+section {
+  margin-top: 0%;
+  h1 {
+    line-height: 120%;
+    margin: 1%;
+    font-size: 135%;
+  }
+  h2 {
+    color: #5f0085;
+    font-weight: bolder;
+    margin-bottom: 2%;
+  }
+  h3 {
+    color: #666;
+    font-size: 90%;
+    letter-spacing: 1px;
+    margin-bottom: 3%;
+  }
+  article {
+    margin: 0% auto;
+    width: 40%;
+    min-width: 50px;
+  }
+
+}
+
+footer {
+  margin-top: 5%;
+}
+
+.btn--primary {
+  background: #5f0085;
+  color: #fff;
+}
+.btn--primary:hover {
+  background-color: white;
+  color: #5f0085;
+  border-color: #5f0085;
+}
+
+.btn--ghost {
+  background: #5f0085;
+  color: white;
+}
+.btn--ghost:hover {
+  background-color: #000223;
+  color: white;
+  border-color: white;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+/* Skip link */
+.skip__link {
+  position: absolute;
+  left: -999px;
+  top: 8px;
+  background: #111;
+  color: #fff;
+  padding: 8px 10px;
+}
+.skip__link:focus { left: 8px; }
+
+/* Topbar */
+.topbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.topbar .container {
+  display: block;
+  padding: 14px 0;
+}
+
+.brand {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.brand__logo {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  border-radius: 10px;
+  background: #5f0085;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.brand__text { display: inline-block; vertical-align: top; }
+.brand__name { display: block; font-weight: bold; }
+.brand__tag { display: block; color: #666; font-size: 0.95rem; }
+
+/*.nav { margin: 20px 0 0; }
+.nav__item { margin-right: 34px; }
+.nav a { color: #2f6fed; text-decoration: none; }
+.nav a:hover { text-decoration: underline; }*/
+
+.cta { margin-top: 12px; }
+
+/* Buttons */
+.btn {
+  margin: 2%;
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+
+
+.btn--full { width: 100%; text-align: center; }
+
+/* Hero */
+.hero {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 30px 0;
+}
+
+.hero__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.hero__subtitle { color: #cbd5e1; }
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.hero__actions { margin: 16px 0; }
+
+.hero__stats { margin-top: 16px; }
+.stat { display: inline-block; margin-right: 18px; }
+.stat__num { font-weight: bold; font-size: 1.1rem; }
+.stat__label { color: #cbd5e1; font-size: 0.9rem; }
+
+/* Cards */
+.card {
+  background: #fff;
+  color: #222;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.card--soft {
+  background: #ffffff;
+}
+
+.card__title { font-weight: bold; font-size: 1.1rem; }
+.card__desc { margin-top: 8px; color: #555; }
+
+/* Sections */
+.section { padding: 34px 0; }
+.section--alt { background: #ffffff; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+
+.section__kicker { color: #2f6fed; font-weight: bold; }
+.section__title { font-size: 1.6rem; font-weight: bold; margin: 6px 0; }
+.section__desc { color: #555; }
+
+/* Pills */
+.pill-list { margin-top: 10px; }
+.pill {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #5f008542;
+  color: #5f0085;
+  margin: 6px 6px 0 0;
+  font-size: 0.9rem;
+}
+
+/* Lists/Blocks */
+.cards, .cases, .pricing, .posts, .testimonials, .contact {
+  margin-top: 18px;
+}
+
+.case, .plan, .post, .quote {
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 16px;
+  background: #fff;
+  margin-bottom: 12px;
+}
+
+.plan--featured {
+  border-color: #2f6fed;
+}
+
+/* Form */
+.form__label { font-weight: bold; margin-bottom: 6px; }
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d8d8d8;
+  border-radius: 25px;
+  font-family: inherit;
+}
+
+.form__hint { color: #666; font-size: 0.9rem; margin-top: 8px; }
+
+/* Footer */
+.footer {
+  background: #0b1220;
+  color: #d1d5db;
+  padding: 26px 0;
+}
+
+.footer a { color: #9cc2ff; text-decoration: none; }
+.footer a:hover { text-decoration: underline; }
+
+.footer__title { font-weight: bold; margin-bottom: 8px; }
+.footer__brand { font-weight: bold; font-size: 1.1rem; }
+.footer__text { color: #cbd5e1; margin-top: 6px; }
+
+.footer__bottom {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  display: block;
+}
+
+/* =========================
+   MEDIA QUERIES (RESPONSIVE)
+   ========================= */
+
+/* Tablet: cambios visibles */
+@media (min-width: 768px) {
+  .topbar .container {
+    display: block;
+    padding: 18px 0;
+  }
+
+  .hero__grid {
+    display: block;
+  }
+
+  .cards, .cases, .posts {
+    display: block;
+  }
+
+  .section__title { font-size: 1.9rem; }
+  .hero__title { font-size: 2.4rem; }
+}
+
+/* Escritorio: layout más “pro” sin enseñar flex/grid a fondo */
+@media (min-width: 1024px) {
+  .topbar .container {
+    display: block;
+  }
+
+  /* layout 2 columnas (sin grid; usando inline-block) */
+  .hero__copy, .hero__card {
+    display: inline-block;
+    vertical-align: top;
+    width: 58%;
+  }
+  .hero__card { width: 38%; margin-left: 3%; }
+
+  .cards .card--soft {
+    display: inline-block;
+    width: 31%;
+    vertical-align: top;
+    margin-right: 2%;
+  }
+  .cards .card--soft:last-child { margin-right: 0; }
+
+  .pricing .plan {
+    display: inline-block;
+    width: 31%;
+    vertical-align: top;
+    margin-right: 2%;
+  }
+  .pricing .plan:last-child { margin-right: 0; }
+
+  .posts .post {
+    display: inline-block;
+    width: 31%;
+    vertical-align: top;
+    margin-right: 2%;
+  }
+  .posts .post:last-child { margin-right: 0; }
+
+  .contact__left, .contact__right {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+  }
+  .contact__right { margin-left: 3%; }
+
+  .footer__grid > div {
+    display: inline-block;
+    width: 31%;
+    vertical-align: top;
+    margin-right: 2%;
+  }
+  .footer__grid > div:last-child { margin-right: 0; }
+}
